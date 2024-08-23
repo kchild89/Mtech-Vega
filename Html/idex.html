@@ -2,70 +2,104 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vega Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vega Project</title>
+  <link rel="stylesheet" href="/Css/styles.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="header-navbar">
-            <div class="left-header">
-                <img src="/Images/Hamburger-icon.png" alt="menu">
-                <img src="/Images/vega-logo.jpg" alt="vega company logo">
-            </div>
-            <div class="search-bar">
-                <img src="/Images/search-icon.png" alt="search icon">
-                <input type="search" placeholder="Search">
-            </div>
-            <div class="right-header">
-                <button>Create</button>
-                <img src="/Images/notification-icon.png" alt="notification icon">
-                <img src="/Images/school-logo.jpg" alt="school logo">
-            </div>
-
-        </div>
-        <div class="main">
-            <div class="left-navbar"></div>
-            <div class="right">
-                <div class="content">
-                    <div class="search-streaks"></div>
-                    <div class="group-attendance"></div>
-                    <div class="point-rules"></div>
-                    <div class="point-shops"></div>
-                </div>
-                <div class="right-sidebar">
-                    <h4>Top Streaks</h4>
-                    <div class="top-streaks">
-                        <div class="badge">
-                            <span class="school-community">Student</span>
-                            <span class="members-name">Burt Furgeson</span>
-                            <img src="/Images/trophy-Image.png" alt="trophy picture">
-                            <span class="community-event">8x @ Girls Volleyball</span>
-                        </div>
-                        <div class="badge">
-                            <span class="school-community">Parent</span>
-                            <span class="members-name">Dana Fields</span>
-                            <img src="/Images/trophy-Image.png" alt="trophy picture">
-                            <span class="community-event">15x @ JV Football</span>
-                        </div>
-                        <div class="badge">
-                            <span class="school-community">Community</span>
-                            <span class="members-name">Rob Caldwell</span>
-                            <img src="/Images/trophy-Image.png" alt="trophy picture">
-                            <span class="community-event">12x @ JV Football</span>
-                        </div>
-                        <div class="badge">
-                            <span class="school-community">Community</span>
-                            <span class="members-name">Rachel Frasier</span>
-                            <img src="/Images/trophy-Image.png" alt="trophy picture">
-                            <span class="community-event">15x @ Soccer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="header">
+      <div class="left-header">
+        <img src="/Images/Hamburger-icon.png" alt="Menu" width="18">
+        <img src="/Images/vega-logo.jpg" alt="Vega company logo" width="80">
+      </div>
+      <div class="search-bar">
+        <img src="/Images/search-icon.png" alt="Search" width="20">
+        <input type="search" placeholder="Search">
+      </div>
+      <div class="right-header">
+        <button>Create</button>
+        <img src="/Images/notification-icon.png" alt="Notification" width="20">
+        <img src="/Images/school-logo.jpg" alt="school logo" width="20">
+      </div>
     </div>
+    <div class="main">
+      <div class="left-navbar">
+        <a href="">Home</a>
+        <img src="/Images/home-icon.png" alt="Home" width="20">
+        <a href="">Calender</a>
+        <img src="/Images/calender-icon.png" alt="Calender" width="20">
+        <a href="">Chat</a>
+        <img src="/Images/chat-icon.jpg" alt="Chat" width="20">
+        <a href="">Group</a>
+        <img src="/Images/group-icon.png" alt="Group" width="20">
+        <a href="">Events</a>
+        <img src="/Images/events-icon.png" alt="Events" width="20">
+        <a href="">Nearby</a>
+        <img src="/Images/nearby-icon.png" alt="Nearby" width="20">
+        <a href="">Locations</a>
+        <img src="/Images/locations-icon.png" alt="Locations" width="20">
+        <a href="">Attendance</a>
+        <img src="/Images/attendance-icon.png" alt="Attendance" width="20">
+        <a href="">Settings</a>
+        <img src="/Images/settings-icon.png" alt="Settings" width="20">
+      </div>
+      <div class="right">
+        <div class="content">
+          <div class="search-streaks">
+            <form>
+              <label for="attendance">Search Streaks</label>
+              <select id="attendance" name="attendance">
+                <option value="most-attendance">Most Attendance</option>
+              </select>
+              <span>at</span>
+              <select id="group-event" name="group-event">
+                <option value="select-group">Select Group Event Type...</option>
+              </select>
+              <select id="time-period" name="time-period">
+                <option value="this-year">This Year</option>
+              </select>
+              <button type="submit">
+                <img src="/Images/search-icon.png" alt="Search icon" width="20">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="right-sidebar">
+          <h4>Top Streaks</h4>
+          <div class="top-streaks">
+            <div class="badge">
+              <span class="school-community">Student</span>
+              <span class="members-name">Burt Furgeson</span>
+              <img src="/Images/trophy-Image.png" alt="Trophy picture" width="20">
+              <span class="community-event">8x @ Girls Volleyball</span>
+            </div>
+            <div class="badge">
+              <span class="school-community">Parent</span>
+              <span class="members-name">Dana Fields</span>
+              <img src="/Images/trophy-Image.png" alt="Trophy picture" width="20">
+              <span class="community-event">15x @ JV Football</span>
+            </div>
+            <div class="badge">
+              <span class="school-community">Community</span>
+              <span class="members-name">Rob Caldwell</span>
+              <img src="/Images/trophy-Image.png" alt="Trophy picture" width="20">
+              <span class="community-event">12x @ JV Football</span>
+            </div>
+            <div class="badge">
+              <span class="school-community">Community</span>
+              <span class="members-name">Rachel Frasier</span>
+              <img src="/Images/trophy-Image.png" alt="Trophy picture" width="20">
+              <span class="community-event">15x @ Soccer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
